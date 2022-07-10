@@ -1,0 +1,64 @@
+$bg : #e2f3f5;
+$main : #22d1ee;
+$heavy : #3d5af1;
+$btncolor : #f0f0f0;
+
+@mixin helo {
+    width: 100%;
+    height: 100vh;
+}
+@mixin he {
+    width: 50%;
+    height: 50%;
+}
+
+body{
+    @include helo();
+    margin: 0;
+}
+.content{
+    @include helo();
+    background-color: $bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#h2{
+    color: $heavy;
+}
+#convert{
+    color: #3d7bf1;
+    font-size: 1.5em;
+}
+#convert.hide{
+    display: none;
+ }
+#convert2{
+    color: #3d7bf1;
+    font-size: 1.5em;
+}
+#convert2.hide{
+    display: none;
+ }
+
+span{
+    font-family: monospace;
+    font-size: 1.5em;
+}
+#row{
+    height: 35%;
+}
+input{
+    font-size: 4em;
+    box-shadow: 1px 1px 5px grey inset;
+}
+
+#DtoB{
+    background-color: $main;
+    border-radius: 15px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
